@@ -1,0 +1,287 @@
+/* Estilos generales */
+body {
+    font-family: kepler, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Fondo de Pantalla Azul Foto Mar en Calma.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 20px;
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+    background-color: #0c1c3f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Añade espaciado uniforme alrededor del encabezado */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    animation: mianimacion 5s ease-in-out 0s infinite normal none;
+}
+
+/* Estilos para el logotipo */
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+/* Estilos para las pestañas en el encabezado */
+.pestanas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #0c1c3f;
+    position: relative;
+}
+
+/* Estilos para los bordes superior e inferior de las pestañas */
+.pestanas::before,
+.pestanas::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f7f4f4;
+    border-radius: 30px;
+}
+
+.pestanas::before {
+    top: 0;
+}
+
+.pestanas::after {
+    bottom: 0;
+}
+
+/* Estilos para los enlaces de las pestañas */
+.pestanas a {
+    text-decoration: none;
+    color: #f7f4f4;
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 10px 25px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Estilos para el contenido principal */
+main {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Estilos para la información de terapia */
+.terapia-info {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para el título de las modalidades */
+.modalidades-titulo {
+    text-align: center;
+    margin: 20px 0;
+    background-color: white;
+}
+
+/* Estilos para el texto de terapia */
+.terapia-texto {
+    flex: 1;
+}
+
+/* Estilos para las imágenes de terapia */
+.terapia-imagen {
+    max-width: 40%;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* Estilos para el tipo de terapia */
+.terapia-tipo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para las columnas de terapia */
+.columnas {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para las columnas individuales de terapia */
+.columna {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el contenido de texto dentro de las columnas */
+.columna p {
+    text-align: center;
+}
+
+/* Estilos para la sección de temáticas */
+.tematicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+/* Estilos para las temáticas individuales */
+.tematica {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #e4c580;
+    text-align: center;
+}
+
+/* Estilos para el título de las temáticas */
+.tematica h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+/* Cambiar estilo al hacer hover en las temáticas */
+.tematica:hover {
+    background-color: #0c1c3f;
+    color: #f5f7f6;
+    border-color: white;
+}
+
+/* Cambiar estilo al hacer hover en el título de las temáticas */
+.tematica:hover h2 {
+    color: #aaf4ee;
+}
+
+/* Estilos para el título de la sección de temáticas */
+.tematicas-titulo {
+    text-align: center;
+    margin: 20px 0;
+    background-color: white;
+}
+
+/* Estilos para la sección de reserva de turno */
+.reservar-turno {
+    text-align: center;
+    margin: 20px 0;
+    background-color: white;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Estilos para el formulario de reserva de turno */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+label,
+input,
+select,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #0c1c3f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #09203f;
+}
+
+/* Estilos para la sección de WhatsApp */
+.whatsapp {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp a {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp a:hover {
+    background-color: #128c7e;
+}
+
+/* Estilos para el icono de WhatsApp */
+.whatsapp i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Estilos para el pie de página */
+#pielogo {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    background-color: #0c1c3f;
+}

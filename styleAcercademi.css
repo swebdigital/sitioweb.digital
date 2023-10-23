@@ -1,0 +1,272 @@
+/* Estilos generales */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Fondo de Pantalla Azul Foto Mar en Calma.png');
+    font-size: 20px
+}
+
+header {
+    background-color: #0c1c3f; /* Azul brillante para el encabezado */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+/*estilos del pie de pagina*/
+#pielogo {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    background-color: #0c1c3f;
+    }
+    
+
+/* Estilos para las pestañas en el encabezado */
+.pestanas {
+    display: flex; /* Utiliza flexbox para alinear las pestañas en una fila */
+    justify-content: center; /* Alinea las pestañas en el centro horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 60px; /* Ajusta la altura deseada para las pestañas */
+    background-color: #0c1c3f; /* Cambia el color de fondo */
+    position: relative; /* Añade posición relativa para los pseudo-elementos */
+}
+
+/* Agrega un borde superior e inferior genérico */
+.pestanas::before,
+.pestanas::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Grosor del borde */
+    background-color: #f7f4f4; /* Color del borde blanco */
+    border-radius: 30px; /* Esquinas redondeadas */
+    display: inline-block; /* Para que el borde se ajuste al contenido */
+}
+
+.pestanas::before {
+    top: 0;
+}
+
+.pestanas::after {
+    bottom: 0;
+}
+
+.pestanas a {
+    text-decoration: none;
+    color: #f7f4f4; /* Cambia el color del texto de las pestañas */
+    font-weight: bold;
+    margin: 0 10px; /* Espacio entre las pestañas */
+    padding: 10px 25px; /* Añade espacio interno a las pestañas */
+    border: 2px solid transparent; /* Borde transparente */
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.pestanas a:hover {
+    color: #aaf4ee; /* Color de enlace al pasar el mouse */
+    background-color: #0c1c3f; /* Cambia el color de fondo al pasar el mouse */
+    border-color: #f7f4f4; /* Cambia el color del borde al pasar el mouse */
+}
+
+
+main {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.encabezado {
+    background-color: #0c1c3f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* Estilos de sección "Sobre mí" */
+.about-me {
+    display: flex;
+    align-items: right;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    text-align: center;   /*para mover la imagen*/
+    padding: 1;
+}
+
+.about-me-text {
+    flex: 1;
+    padding-right: 1px;
+    text-align: left;
+    padding-left: 50px ;
+}
+
+.about-me-image {
+    flex: 1;
+}
+
+.about-me img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/*para cursos*/
+
+.cursos {
+    padding: 20px 0;
+    text-align: left;
+}
+
+.cursos-text {
+    flex: 1;
+    padding-right: 1px;
+    text-align: left;
+    padding-left: 231px ;
+}
+
+.cursos h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cursos p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Estilos adicionales para los cursos */
+.cursos p::before {
+    content: "→ ";
+    font-weight: bold;
+    color: #e4c580; /* Color del símbolo de la flecha */
+}
+
+/* Hover sobre los cursos */
+.cursos p:hover {
+    color: #0c1c3f; /* Cambia el color del texto al hacer hover */
+}
+
+/*para certificaciones*/
+
+.certificaciones {
+    padding: 20px 0;
+    text-align: left;
+}
+
+.certificaciones-text {
+    flex: 1;
+    padding-right: 1px;
+    text-align: left;
+    padding-left: 231px ;
+}
+
+.certificaciones h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.certificaciones p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+/* Estilos adicionales para los cursos */
+.certificaciones p::before {
+    content: "→ ";
+    font-weight: bold;
+    color: #e4c580; /* Color del símbolo de la flecha */
+}
+
+/* Hover sobre los cursos */
+.certificaciones p:hover {
+    color: #0c1c3f; /* Cambia el color del texto al hacer hover */
+}
+
+
+
+/*OJOOO, ESTA TODO SIN EL "/*" EN LOS COMENTARIOS, SI LO VOY A USAR, POENRLOS EN CADA COMENTARIO QUE TIENE LOS CODIGOS.
+/*css de la parte de sobre mi, para agregar la imagen y texto al lado, esto estaba en incinio
+/*Estilos para el contenedor principal */
+/*
+.contenedor-sobremi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /*ajusta el espacio entre el titulo y el texto e imagen
+    padding: 100px;   
+}
+
+/* Estilos para la columna de la imagen */
+/* 
+.columna-imagen {
+    flex: 2; /* Reducimos el ancho de la columna de la imagen 
+    text-align: center;
+    margin-left: 100px; /* Agregamos margen derecho para separar la imagen del texto 
+}
+
+.columna-imagen img {
+    max-width: 100%; /* Ajustamos la imagen al 100% del ancho de la columna 
+    height: auto;
+}
+
+/* Estilos para la columna de resumen
+.columna-resumen {
+    flex: 2; /* Reducimos el ancho de la columna de resumen 
+    padding: 100px; /* quedo el texto mas en el medio , Cambié el valor de padding para ajustarlo 
+    
+
+/* Estilos para el título "Sobre Mí"
+.titulo-sobre-mi {
+    text-align: center; /* Centraliza el título horizontalmente 
+    margin: 50px 1rem 0;
+}
+
+.columna-resumen p {
+    font-size: 12px;
+    line-height: 2;
+    word-wrap: break-word;
+    margin-top: 0; /* Elimina el margen superior del párrafo 
+}
+/*

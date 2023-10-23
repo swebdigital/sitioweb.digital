@@ -1,0 +1,186 @@
+/* Estilos generales */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Fondo de Pantalla Azul Foto Mar en Calma.png');
+    background-repeat: repeat-x, repeat-y;
+    font-size: 20px
+}
+
+.encabezado {
+    background-color: #0c1c3f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    animation: mianimacion 5s ease-in-out 0s infinite normal none;
+}
+@keyframes mianimacion {
+    0% {
+    background: #FFFFFF;
+    }
+    50% {
+    background: #bdb9b9;
+    }
+    100% {
+    background: #FFFFFF;
+    }
+    }
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 24px;
+}
+
+header {
+    background-color: #0c1c3f; /* Azul brillante para el encabezado */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+/*estilos del pie de pagina*/
+#pielogo {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    background-color: #0c1c3f;
+    }
+    
+
+/* Estilos para las pestañas en el encabezado */
+.pestanas {
+    display: flex; /* Utiliza flexbox para alinear las pestañas en una fila */
+    justify-content: center; /* Alinea las pestañas en el centro horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 60px; /* Ajusta la altura deseada para las pestañas */
+    background-color: #0c1c3f; /* Cambia el color de fondo */
+    position: relative; /* Añade posición relativa para los pseudo-elementos */
+}
+
+/* Agrega un borde superior e inferior genérico */
+.pestanas::before,
+.pestanas::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Grosor del borde */
+    background-color: #f7f4f4; /* Color del borde blanco */
+    border-radius: 30px; /* Esquinas redondeadas */
+    display: inline-block; /* Para que el borde se ajuste al contenido */
+}
+
+.pestanas::before {
+    top: 0;
+}
+
+.pestanas::after {
+    bottom: 0;
+}
+
+.pestanas a {
+    text-decoration: none;
+    color: #f7f4f4; /* Cambia el color del texto de las pestañas */
+    font-weight: bold;
+    margin: 0 10px; /* Espacio entre las pestañas */
+    padding: 10px 25px; /* Añade espacio interno a las pestañas */
+    border: 2px solid transparent; /* Borde transparente */
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.pestanas a:hover {
+    color: #aaf4ee; /* Color de enlace al pasar el mouse */
+    background-color: #0c1c3f; /* Cambia el color de fondo al pasar el mouse */
+    border-color: #f7f4f4; /* Cambia el color del borde al pasar el mouse */
+}
+
+
+main {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+#cajapadre {
+    position: relative;
+    width: 365px;
+    height: 274px;
+    overflow: hidden;
+    }
+
+    #contenedor {
+        position: absolute;
+        top: 0px;
+        width: 365px;
+        height: 324px;
+        }
+        #contenedorsuperior {
+        width: 365px;
+        height: 274px;
+        }
+        #contenedorinferior {
+        width: 365px;
+        height: 35px;
+        padding-top: 15px;
+        background-color: rgba(200, 200, 200, 0.8);
+        text-align: center;
+        }
+        #contenedor:hover {
+        top: -50px;
+        }
+
+
+
+        #articulonoticias {
+            width: 580px;
+            padding: 10px;
+            border: 1px solid;
+            column-count: 2;
+            column-gap: 20px;
+            column-rule: 1px solid #000000;
+            text-align: center;
+            }
+
+        /*el conteiner es para centralizar el recuadro. */ 
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .lista{
+                color:#b1bb47;
+                
+            }
+            
+                dl {
+                    column-count: 5;
+                    gap: 10px; /* Espacio entre términos y descripciones */
+                    text-align: center; /* Centra los títulos */
+                }
+            
+            .dt {
+                text-align: center;
+                margin-left: 50px;
+            
+            }

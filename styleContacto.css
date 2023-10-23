@@ -1,0 +1,240 @@
+/* Estilos generales */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Fondo de Pantalla Azul Foto Mar en Calma.png');
+    font-size: 20px
+}
+
+.encabezado {
+    background-color: #0c1c3f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 24px;
+}
+
+header {
+    background-color: #0c1c3f; /* Azul brillante para el encabezado */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+/*estilos del pie de pagina*/
+#pielogo {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    background-color: #0c1c3f;
+    }
+    
+
+.pestanas {
+    display: flex; /* Utiliza flexbox para alinear las pestañas en una fila */
+    justify-content: center; /* Alinea las pestañas en el centro horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 60px; /* Ajusta la altura deseada para las pestañas */
+    background-color: #0c1c3f; /* Cambia el color de fondo */
+    position: relative; /* Añade posición relativa para los pseudo-elementos */
+}
+
+/* Agrega un borde superior e inferior genérico */
+.pestanas::before,
+.pestanas::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Grosor del borde */
+    background-color: #f7f4f4; /* Color del borde blanco */
+    border-radius: 30px; /* Esquinas redondeadas */
+    display: inline-block; /* Para que el borde se ajuste al contenido */
+}
+
+.pestanas::before {
+    top: 0;
+}
+
+.pestanas::after {
+    bottom: 0;
+}
+
+.pestanas a {
+    text-decoration: none;
+    color: #f7f4f4; /* Cambia el color del texto de las pestañas */
+    font-weight: bold;
+    margin: 0 10px; /* Espacio entre las pestañas */
+    padding: 10px 25px; /* Añade espacio interno a las pestañas */
+    border: 2px solid transparent; /* Borde transparente */
+    border-radius: 10px; /* Agrega esquinas redondeadas */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.pestanas a:hover {
+    color: #aaf4ee; /* Color de enlace al pasar el mouse */
+    background-color: #0c1c3f; /* Cambia el color de fondo al pasar el mouse */
+    border-color: #f7f4f4; /* Cambia el color del borde al pasar el mouse */
+}
+
+
+main {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Estilos del formulario */
+form {
+    max-width: 1000px;
+    width: 90%; /* Cambia el ancho del formulario */
+    margin: 2rem auto; /* Ajusta los márgenes */
+    padding: 2rem; /* Aumenta el espaciado interno */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Redondea los bordes del recuadro */
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    display: grid;
+    grid-gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem 0.1rem; /* Aumenta el espaciado interno */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Reduce el valor para un aspecto menos redondeado */
+}
+
+button {
+    padding: 0.75rem 1.5rem; /* Ajusta el espaciado interno */
+    background-color: #0c1c3f; /* Mismo azul brillante para el botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor de contacto */
+.contenedor-contacto {
+    display: flex;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Alinea el formulario a la derecha */
+}
+
+/* Estilos para la información de contacto */
+.contacto-info {
+    flex: 1; /* Ocupa el 50% del ancho del contenedor */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para el título de contacto */
+.titulo-contacto {
+    text-align: center; /* Centra el título horizontalmente */
+    margin: 0; /* Elimina el margen superior e inferior */
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 40%; /* Ajusta el ancho del formulario */
+}
+
+/* Estilos para los iconos de redes sociales */
+.redes-sociales {
+
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los iconos a la izquierda */
+    margin-top: 3rem; /* Agrega espacio superior */
+}
+
+.redes-sociales a {
+    margin-bottom: 0.5rem; /* Agrega espacio entre los iconos */
+    color: #777; /* Cambia el color a gris */
+}
+
+/* Tamaño de los iconos */
+.redes-sociales i {
+    font-size: 24px; /* Ajusta el tamaño de los iconos */
+}
+
+/* Estilos para la sección de WhatsApp */
+.whatsapp {
+    text-align: center;
+    margin-top: 20px; /* Agrega margen superior */
+}
+
+
+
+
+.whatsapp a {
+    display: inline-block;
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp a:hover {
+    background-color: #128c7e; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos para el icono de WhatsApp */
+.whatsapp i {
+    font-size: 24px; /* Tamaño del icono */
+    margin-right: 10px; /* Espaciado a la derecha del icono */
+}
+
+/* Estilos para el calendario */
+#calendario {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Estilos para los días disponibles y no disponibles */
+.fc-day.no-disponible {
+    background-color: red;
+    color: white;
+}
+
+.fc-day.disponible {
+    background-color: lightgreen;
+    cursor: pointer;
+}
